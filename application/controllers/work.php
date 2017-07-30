@@ -21,6 +21,6 @@ class Work extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('bs_view');
-		$data = $this->bd_view->myData();
+		$data = $this->bs_view->myData();
 		print_r($data);
 	}
