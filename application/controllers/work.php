@@ -20,7 +20,8 @@ class Work extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('bs_view');
-		$data = $this->bs_view->myData();
-		print_r($data);
+		$this->load->model('school');
+		$result = $this->school->getData();
+		$this->load->view('bs_view',$result);
 	}
+}
