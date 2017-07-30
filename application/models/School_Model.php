@@ -1,6 +1,6 @@
 <?php
 
-public class School_Model extends CI_Model
+ class School_Model extends CI_Model
 {
 	
 	function getData()
