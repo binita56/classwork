@@ -22,6 +22,7 @@ class Work extends CI_Controller {
 	{
 		$this->load->model('school');
 		$result = $this->school->getData();
-		$this->load->view('bs_view',$result);
+		$data = array('ans' => $result,'title'=>"<h1>Datas Extracted from database</h1><br>");
+		$this->load->view('bs_view',$data);
 	}
 }
